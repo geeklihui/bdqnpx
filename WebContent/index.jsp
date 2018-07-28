@@ -18,10 +18,13 @@
       padding-left:70px;
       padding-right:70px;
   }
+  body{
+  	background-color:Snow ;
+  }
   </style>
   
 </head>
-<body style="margin-top:50px">
+<body>
 <center>
 
 <nav class="navbar navbar-expand-sm bg-danger navbar-dark fixed-top">
@@ -42,6 +45,9 @@
     <li class="nav-item">
       <a class="nav-link disabled" href="merchan.html">商家入口</a>
     </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#" data-toggle="modal" data-target="#myModal">当前登录：${xxx}</a>
+    </li>
   </ul>
 </nav>
 
@@ -54,11 +60,69 @@
 <a href="shopcar.jsp">查看购物车</a>
 -->
 
+  <!-- 模态框 -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+   
+        <!-- 模态框头部 -->
+        <div class="modal-header">
+          <h4 class="modal-title">用户中心</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+   
+        <!-- 模态框主体 -->
+<div class="container">
+ <div class="row">
+    <div class="col-sm-12">
+      <div class="card ">
+    <div class="card-body bg-light text-dark">
+	<table class="table table-hover" style="width:450px">
+<tr>
+	<td>用户名：</td>
+</tr>
+<tr>
+    <td>数字ID：</td>
+</tr>
+<tr>
+	<td>真实姓名:</td>
+</tr>
+<tr>
+	<td>收货地址:</td>
+</tr>
+<tr>
+	<td>联系电话：</td>
+</tr>
+<tr>
+	<td>邮箱:</td>
+</tr>
+<tr>
+	<td>账户余额:</td>
+</tr>
+</table>
+</div> 
+</div>
+    </div>
+    </div>
+   
+        <!-- 模态框底部 -->
+        <div class="modal-footer">
+        <input type="submit" onclick="window.location.href='user.jsp'" value="修改" class="btn btn-danger">
+        <button type="button" class="btn btn-dark" data-dismiss="modal">关闭</button>
+        </div>
+   
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+
 <div style="margin-top:100px;">
 
 <h2 style="color:FireBrick ;font-weight-bold"><b>· 促销活动 ·</b></h2><br>
 
-<div id="demo" class="carousel slide" data-ride="carousel">
+<div id="demo" class="carousel slide" data-ride="carousel" data-interval="2000">
  
   <!-- 指示符 -->
   <ul class="carousel-indicators">
@@ -88,15 +152,12 @@
  
   <!-- 左右切换按钮 -->
   <a class="carousel-control-prev" href="#demo" data-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
+	<span class="carousel-control-prev-icon"></span>
   </a>
   <a class="carousel-control-next" href="#demo" data-slide="next">
     <span class="carousel-control-next-icon"></span>
   </a>
- 
 </div>
-
-
 
 <br><br>
 

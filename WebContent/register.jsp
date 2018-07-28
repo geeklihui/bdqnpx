@@ -10,6 +10,12 @@
 <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" ></script>
 <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style>
+  body{
+  	background-color:Snow;
+  }
+  </style>
+
 </head>
 <body>
 <center>

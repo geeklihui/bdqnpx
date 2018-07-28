@@ -8,6 +8,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.swing.JOptionPane;
 
 @WebServlet("/Login")
 public class Login extends HttpServlet {
@@ -35,6 +36,7 @@ public class Login extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		//接收前端账户密码
 		request.setCharacterEncoding("UTF-8");
+		response.setCharacterEncoding("UTF-8"); 
 		String username = request.getParameter("username");//获取页面提交过来的账号
 		String password = request.getParameter("password");//获取页面提交过来的密码
 		
@@ -43,12 +45,13 @@ public class Login extends HttpServlet {
 		{
 			System.out.println("suc");
 			request.setAttribute("xxx", username);
-			request.getRequestDispatcher("login.jsp").forward(request, response);
+			request.getRequestDispatcher("index.jsp").forward(request, response);
 		}
 		else {
 			System.out.println("err");
 			//重定向
-			response.sendRedirect("Login");
+			PrintWriter out = response.getWriter();
+			out.print("<script>alert('账户/密码错误，请重试！');window.location.href='login.jsp'</script>");
 		}
 		
 	}
