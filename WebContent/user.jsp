@@ -6,17 +6,18 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>零秒购-用户中心</title>
 <!-- 引入 Bootstrap -->
-<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js"></script>
-<script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" ></script>
-<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css">
-
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+  <script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  
   <style>
   body{
   	background-color:Snow;
   }
   </style>
   
+
 </head>
 <body>
 <center>
@@ -26,23 +27,41 @@
     <li class="nav-item">
       <a class="nav-link" href="http://localhost:8080/bdqno/">首页</a>
     </li>
-    <li class="nav-item active">
-      <a class="nav-link" href="Login">登录</a>
-    </li>
     <li class="nav-item">
-      <a class="nav-link" href="register.jsp">注册</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="shopcar.jsp">购物车</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link disabled" href="merchan.html">商家入口</a>
+      <a class="nav-link" href="Shopcar">购物车</a>
     </li>
         <li class="nav-item">
       <a class="nav-link">当前登录：${account}</a>
     </li>
   </ul>
 </nav>
+
+
+  <!-- 模态框 -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+   
+        <!-- 模态框头部 -->
+        <div class="modal-header">
+          <h4 class="modal-title">注销账户</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+   
+        <!-- 模态框主体 -->
+        <div class="modal-body">
+          继续此操作将<b>彻底删除</b>您的账户，<b>无法撤销</b>。<br>请确认您账户下没有未完成订单，且账户余额为0。
+        </div>
+   
+        <!-- 模态框底部 -->
+        <div class="modal-footer">
+        <input type="submit" onclick="window.location.href='user.jsp'" value="确认删除" class="btn btn-danger">
+        <button type="button" class="btn btn-dark" data-dismiss="modal">关闭</button>
+        </div>
+   
+      </div>
+    </div>
+  </div>
 
 <div class="container" style="margin-top:100px;margin-bottom:50px;">
  <div class="row">
@@ -51,7 +70,7 @@
       <div class="card ">
     <div class="card-header bg-danger text-white"><b>{xxx}</b></div>
     <div class="card-body bg-light text-dark">
-	<table class="table table-hover" style="width:700px">
+	<table class="table table-hover" style="width:500px">
 <tr>
 	<td>用户名：</td>
 </tr>
@@ -79,8 +98,13 @@
 </div><br>
    <div class="btn-group">
 	<button type="submit" class="btn btn-danger">修改</button>
-	<button type="sumbit" class="btn btn-dark">注销账户</button>
+	<button  data-toggle="modal" data-target="#myModal" data-placement="bottom" class="btn btn-dark">注销账户</button>
 </div> 
+
+
     </div>
     </div>
     </div>
+    </center>
+    </body>
+    </html>

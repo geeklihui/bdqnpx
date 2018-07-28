@@ -26,17 +26,8 @@
     <li class="nav-item">
       <a class="nav-link" href="http://localhost:8080/bdqno/">首页</a>
     </li>
-    <li class="nav-item">
-      <a class="nav-link" href="Login">登录</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="register.jsp">注册</a>
-    </li>
     <li class="nav-item active">
-      <a class="nav-link" href="shopcar.jsp">购物车</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link disabled" href="merchan.html">商家入口</a>
+      <a class="nav-link" href="Shopcar">购物车</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="#" data-toggle="modal" data-target="#myModal">当前登录：${xxx}</a>
@@ -111,7 +102,7 @@
 -->
 
 （需要连接数据库，实现返回列表、删除项目。）
-<table class="table" style="width:400px">
+<table class="table table-hover" style="width:400px">
 <tr>
     <td>商品1：XXX</td>
     <td>价格：XXX</td>

@@ -20,23 +20,14 @@
 </head>
 <body>
 <center>
-<nav class="navbar navbar-expand-sm bg-danger navbar-dark fixed-top">
+<nav class="navbar navbar-expand-sm bg-danger navbar-dark fixed-top" style="text-color:white;">
 <a class="navbar-brand" href="#"><b>零秒购</b></a>
   <ul class="navbar-nav">
     <li class="nav-item">
       <a class="nav-link" href="http://localhost:8080/bdqno/">首页</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="Login">登录</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="register.jsp">注册</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="shopcar.jsp">购物车</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link disabled" href="merchan.html">商家入口</a>
+      <a class="nav-link" href="Shopcar">购物车</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="#" data-toggle="modal" data-target="#myModal">当前登录：${xxx}</a>

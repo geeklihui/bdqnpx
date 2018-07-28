@@ -30,10 +30,7 @@
       <a class="nav-link" href="Login">登录</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="register.jsp">注册</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="shopcar.jsp">购物车</a>
+      <a class="nav-link" href="Register">注册</a>
     </li>
     <li class="nav-item">
       <a class="nav-link disabled" href="merchan.html">商家入口</a>
@@ -68,12 +65,10 @@
 	<button type="reset" class="btn btn-dark">重置</button>
 </div>
 </form>
-	<a href="findpwd.jsp" ><p style="margin-top:10px;color:black;">找回密码</p></a>
+	<a href="Findpwd" ><p style="margin-top:10px;color:black;">找回密码</p></a>
 </div>
 </div>
 
-
-【测试servlet】当前登录用户：${xxx}
 
 </div>
 </center>

@@ -51,7 +51,7 @@ public class Login extends HttpServlet {
 			System.out.println("err");
 			//重定向
 			PrintWriter out = response.getWriter();
-			out.print("<script>alert('账户/密码错误，请重试！');window.location.href='login.jsp'</script>");
+			out.print("<script>alert('账户/密码错误，请重试！');window.location.href='Login'</script>");
 		}
 		
 	}

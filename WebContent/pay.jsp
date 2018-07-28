@@ -26,16 +26,7 @@
       <a class="nav-link" href="http://localhost:8080/bdqno/">首页</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="Login">登录</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="register.jsp">注册</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="shopcar.jsp">购物车</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link disabled" href="merchan.html">商家入口</a>
+      <a class="nav-link" href="Shopcar">购物车</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="#" data-toggle="modal" data-target="#myModal">当前登录：${xxx}</a>
@@ -109,7 +100,7 @@
  <div class="row">
     <div class="col-sm-12">
 <h3>收货信息</h3>
-<table class="table" style="width:400px">
+<table class="table table-hover" style="width:450px">
 <tr>
     <td>收货人：XXX</td>
 </tr>
@@ -120,7 +111,7 @@
     <td>地址：XXX</td>
 </table>
 <h3>商品信息</h3>
-<table class="table" style="width:400px">
+<table class="table table-hover" style="width:450px">
 <tr>
     <td>商品名称：XXX</td>
 </tr>
@@ -132,7 +123,7 @@
 </tr>
 </table>
 <h3>价目信息</h3>
-<table class="table" style="width:400px">
+<table class="table table-hover" style="width:450px">
 <tr>
     <td>商品总价：XXX</td>
 </tr>
