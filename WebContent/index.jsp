@@ -43,7 +43,7 @@
       <a class="nav-link" href="shopcar.jsp">购物车</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#" data-toggle="modal" data-target="#myModal">当前登录：${account}</a>
+      <a class="nav-link" href="#" data-toggle="modal" data-target="#myModal">当前登录：${user.getUserName()}</a>
     </li>
   </ul>
 </nav>
@@ -76,25 +76,25 @@
     <div class="card-body bg-light text-dark">
 	<table class="table table-hover" style="width:450px">
 <tr>
-	<td>用户名：${account}</td>
+	<td>用户名：${user.getUserName()}</td>
 </tr>
 <tr>
-    <td>数字ID：</td>
+    <td>数字ID：${user.getId()}</td>
 </tr>
 <tr>
-	<td>真实姓名:</td>
+	<td>真实姓名：${user.getRealName()}</td>
 </tr>
 <tr>
-	<td>收货地址:</td>
+	<td>收货地址：${user.getAddress()}</td>
 </tr>
 <tr>
-	<td>联系电话：</td>
+	<td>联系电话：${user.getPhone()}</td>
 </tr>
 <tr>
-	<td>邮箱:</td>
+	<td>邮箱：${user.getEmail()}</td>
 </tr>
 <tr>
-	<td>账户余额:</td>
+	<td>账户余额：0</td>
 </tr>
 </table>
 </div> 
@@ -208,7 +208,7 @@
     </a>
     <div class="card-body">
       <h4 class="card-title"style="color:red;"><font size="3" color=black><s>原价：￥9.00 </s><br>限时折扣价：</font>￥2.99</h4>
-      <p class="card-text"><b>【包邮】现代客厅装饰画 田园油画发财树 幸福树 装饰画卧室 </b></p>
+      <p class="card-text"><b>【包邮】现代客厅装饰画 田园油画发财树 幸福树 装饰画 </b></p>
       <a target="_blank" href="error.jsp" class="btn btn-danger">立即抢购</a>
     </div>
   </div>
@@ -266,7 +266,7 @@
     </a>
     <div class="card-body">
       <h4 class="card-title"style="color:red;"><font size="3" color=black><s>原价：￥5.90 </s><br>限时折扣价：</font>￥0.99</h4>
-      <p class="card-text"><b>【包邮】请拍1贴默认发3贴 送父母 送自己居家必备 膏药贴 </b></p>
+      <p class="card-text"><b>【包邮】请拍1贴默认发3 送父母 送自己居家必备 膏药贴 </b></p>
       <a target="_blank" href="error.jsp" class="btn btn-danger">立即抢购</a>
     </div>
   </div>

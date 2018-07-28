@@ -42,19 +42,19 @@
 -->
  <div class="row">
     <div class="col-sm-12">
-<form action="login">
+<form action="login" method="post">
 
 <div class="input-group mb-3" style="padding: 0px 350px;">
     <div class="input-group-prepend">
         <span class="input-group-text">账户</span>
     </div>
-      <input type="text" class="form-control" placeholder="请输入账户" id="usr" name="account" autofocus>
+      <input type="text" class="form-control" placeholder="请输入账户" id="usr" name="user.userName" required="required" autofocus>
 </div>
 <div class="input-group mb-3" style="padding: 0px 350px;">
     <div class="input-group-prepend">
         <span class="input-group-text">密码</span>
 	</div>
-      <input type="password" class="form-control" placeholder="请输入密码" id="pwd" name="password">
+      <input type="password" class="form-control" placeholder="请输入密码" id="pwd" name="user.passWord" required="required">
 </div>
 
 <div class="btn-group">

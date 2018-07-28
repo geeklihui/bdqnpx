@@ -10,8 +10,9 @@
     
         <action name="login" class="com.bdqno.web.action.LoginAction">
             <result name="ok">/index.jsp</result>
+            <result name="fail">/login.jsp</result>
         </action>
-        <action name="register" class="com.bdqno.web.action.LoginAction">
+        <action name="register" class="com.bdqno.web.action.RegisterAction">
             <result name="ok">/login.jsp</result>
         </action>
         <action name="findpwd" class="com.bdqno.web.action.LoginAction">

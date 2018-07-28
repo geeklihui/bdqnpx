@@ -107,6 +107,7 @@
 <h4 style="color:red;"><font size="3" color=black>抢购价：</font><b>￥9.99</b></h4><p>
 <div class="btn-group">
         <input type="submit" value="立即抢购" class="btn btn-danger">
+        <input type="submit" value="加入购物车" class="btn btn-dark">
 </div>
 </div>
 

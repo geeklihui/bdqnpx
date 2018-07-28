@@ -1,32 +1,36 @@
 package com.bdqno.web.action;
 
+import com.bdqno.web.dao.UserDao;
+import com.bdqno.web.dao.impl.UserDaoImpl;
+import com.bdqno.web.pojo.User;
+
 
 //当作普通的java类
-public class LoginAction {//在配置文件中配置action，让客户端能访问到
-	private String msg;
-	private String account;//设置属性跟页面表单数据对应
-	private String password;
-	
-	public String execute() {//默认执行此方法执行请求
-		msg = "学习structs 2框架";
-		System.out.println(account+password);
-		return "ok";
+public class LoginAction {// 在配置文件中配置action，让客户端能访问到
+	private User user;
+	// private String account;//设置属性跟页面表单数据对应
+	// private String password;
+	// struts2的属性驱动模型
+
+	public String execute() {// 默认执行此方法执行请求
+		UserDao dao = new UserDaoImpl();
+		if (dao.findByAccAndPwd(user) == null) {
+			System.out.println("登陆失败");
+			return "fail";
+		} else {
+			System.out.println(dao.findByAccAndPwd(user) );
+			return "ok";
+			
+		}
 	}
-	public String getMsg() {
-		return msg;
+
+
+	public User getUser() {
+		return user;
 	}
-	public String getAccount() {
-		return account;
+
+	public void setUser(User user) {
+		this.user = user;
 	}
-	public void setAccount(String account) {
-		this.account = account;
-	}
-	public String getPassword() {
-		return password;
-	}
-	public void setPassword(String password) {
-		this.password = password;
-	}
-	
 
 }
