@@ -45,9 +45,10 @@
 <s>原价：￥${goods.originalPrice}</s> <br>
 <h4 style="color:red;"><font size="3" color=black>抢购价：</font><b>￥${goods.persentPrice}</b></h4><p>
 <div class="btn-group">
-        <input type="submit" value="立即抢购" class="btn btn-danger">
+        <input type="submit" onclick="window.location.href='succ.jsp'" value="立即抢购" class="btn btn-danger">
         <input type="submit" onclick="window.location.href='goods_activity'" value="所有商品" class="btn btn-dark">
 </div>
+<h6 style="margin-top:10px;">点击“立即抢购”按钮，<br>将按照您注册时的收货信息提交订单。</h6>
 </div>
 
 <div class="col-sm-8">

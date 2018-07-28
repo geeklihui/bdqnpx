@@ -30,7 +30,6 @@ public class GoodsDaoImpl implements GoodsDao {
 				goods.setTimeLimit(rst.getTimestamp("timeLimit"));
 				list.add(goods);
 			}
-			System.out.println("dao---------------------" + list.size());
 			return list;
 		} catch (SQLException e) {
 			e.printStackTrace();

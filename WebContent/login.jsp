@@ -44,13 +44,13 @@
     <div class="col-sm-12">
 <form class="loginForm" action="user_login" method="post">
 
-<div class="input-group mb-3" style="padding: 0px 350px;">
+<div class="input-group" style="margin:0% 30% 1% 0%;padding:0% 30% 0% 30%">
     <div class="input-group-prepend">
         <span class="input-group-text">账户</span>
     </div>
       <input type="text" class="form-control" placeholder="请输入账户" id="usr" name="user.userName" required="required" autofocus>
 </div>
-<div class="input-group mb-3" style="padding: 0px 350px;">
+<div class="input-group" style="margin:0% 30% 1% 0%;padding:0% 30% 0% 30%">
     <div class="input-group-prepend">
         <span class="input-group-text">密码</span>
 	</div>
@@ -62,7 +62,6 @@
 	<button type="reset" class="btn btn-dark">重置</button>
 </div>
 </form>
-	<a href="findpwd.jsp" ><p style="margin-top:10px;color:black;">找回密码</p></a>
 </div>
 </div>
 

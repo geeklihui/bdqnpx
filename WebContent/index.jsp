@@ -1,4 +1,4 @@
-﻿<%@ page language="java" contentType="text/html; charset=UTF-8"
+<%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -40,9 +40,66 @@
     <li class="nav-item">
       <a class="nav-link" href="register.jsp">注册</a>
     </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#" data-toggle="modal" data-target="#myModal">当前登录：${user.getPhone()}</a>
+    </li>
   </ul>
 </nav>
 
+
+  <!-- 模态框 -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+   
+        <!-- 模态框头部 -->
+        <div class="modal-header">
+          <h4 class="modal-title">用户中心</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+   
+        <!-- 模态框主体 -->
+<div class="container">
+ <div class="row">
+    <div class="col-sm-12">
+    <br>
+      <div class="card ">
+    <div class="card-body bg-light text-dark">
+	<table class="table table-hover" style="width:450px">
+<tr>
+	<td>用户名：${user.getUserName()}</td>
+</tr>
+<tr>
+    <td>数字ID：${user.getId()}</td>
+</tr>
+<tr>
+	<td>真实姓名：${user.getRealName()}</td>
+</tr>
+<tr>
+	<td>收货地址：${user.getAddress()}</td>
+</tr>
+<tr>
+	<td>联系电话：${user.getPhone()}</td>
+</tr>
+<tr>
+	<td>邮箱：${user.getEmail()}</td>
+</tr>
+</table>
+</div> 
+</div>
+    </div>
+    </div>
+   
+        <!-- 模态框底部 -->
+        <div class="modal-footer">
+         <button type="button" class="btn btn-dark" data-dismiss="modal">关闭</button>
+        </div>
+   
+      </div>
+    </div>
+  </div>
+  
+</div>
 
 <div style="margin-top:100px;">
 
@@ -61,17 +118,17 @@
   <!-- 轮播图片 -->
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <a target="_blank" href="activity.jsp">
+      <a target="_blank" href="goods_activity">
 	<img alt="（网站logo）" src="img/head1.jpg">
 	</a>
     </div>
     <div class="carousel-item">
-       <a target="_blank" href="error.jsp">
+       <a target="_blank" href="goods_activity">
 	<img alt="（网站logo）" src="img/head2.jpg">
 	</a>
     </div>
     <div class="carousel-item">
-           <a target="_blank" href="error.jsp">
+           <a target="_blank" href="goods_activity">
 	<img alt="（网站logo）" src="img/head3.jpg">
 	</a>
     </div>

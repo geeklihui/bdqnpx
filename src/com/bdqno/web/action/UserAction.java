@@ -21,8 +21,6 @@ public class UserAction {// 一个action中包含多个业务处理逻辑方法�
 			user.setId(u.getId());
 			user.setPhone(u.getPhone());
 			user.setRealName(u.getRealName());
-			
-			System.out.println(dao.findByAccAndPwd(user));
 			GoodsAction g=new GoodsAction();
 			g.index();
 			return "login";
@@ -38,18 +36,6 @@ public class UserAction {// 一个action中包含多个业务处理逻辑方法�
 		else {
 		return "fail";}
 		
-	}
-	
-	// 找回密码
-	public String findpwd() {
-		UserDao dao = new UserDaoImpl();
-		if (dao.findpwd(user) == null) {
-			return "fail";
-		} else {
-			System.out.println(dao.findpwd(user));
-			return "findpwd";
-		}
-
 	}
 
 	public User getUser() {

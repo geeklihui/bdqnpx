@@ -44,19 +44,19 @@
 <form action="user_register" method="post">
 
 <h4>账户信息</h4>
-<div class="input-group mb-3" style="padding: 0px 350px;">
+<div class="input-group mb-3" style="margin:0% 30% 1% 0%;padding:0% 30% 0% 30%">
       <div class="input-group-prepend">
         <span class="input-group-text">账户</span>
       </div>
       <input type="text" class="form-control" placeholder="请输入账户" id="usr" name="user.userName" required="required" autofocus>
 </div>
-<div class="input-group mb-3" style="padding: 0px 350px;">
+<div class="input-group mb-3" style="margin:0% 30% 1% 0%;padding:0% 30% 0% 30%">
       <div class="input-group-prepend">
         <span class="input-group-text">密码</span>
       </div>
       <input type="password" class="form-control" placeholder="请使用复杂密码" id="pwd" name="user.passWord" required="required">
 </div>
-<div class="input-group mb-3" style="padding: 0px 350px;">
+<div class="input-group mb-3" style="margin:0% 30% 1% 0%;padding:0% 30% 0% 30%">
       <div class="input-group-prepend">
         <span class="input-group-text">邮箱</span>
       </div>
@@ -64,19 +64,19 @@
 </div>
 
 <h4>收货信息</h4>
-<div class="input-group mb-3" style="padding: 0px 350px;">
+<div class="input-group mb-3" style="margin:0% 30% 1% 0%;padding:0% 30% 0% 30%">
       <div class="input-group-prepend">
         <span class="input-group-text">姓名</span>
       </div>
       <input type="text" class="form-control" placeholder="请输入真实姓名" id="nam" name="user.realName" required="required">
 </div>
-<div class="input-group mb-3" style="padding: 0px 350px;">
+<div class="input-group mb-3" style="margin:0% 30% 1% 0%;padding:0% 30% 0% 30%">
       <div class="input-group-prepend">
         <span class="input-group-text">手机</span>
       </div>
       <input type="number" class="form-control" placeholder="用于联系发货" id="pho" name="user.phone" required="required">
 </div>
-<div class="input-group mb-3" style="padding: 0px 350px;">
+<div class="input-group mb-3" style="margin:0% 30% 1% 0%;padding:0% 30% 0% 30%">
       <div class="input-group-prepend">
         <span class="input-group-text">地址</span>
       </div>
