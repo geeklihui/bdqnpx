@@ -24,7 +24,7 @@
 <a class="navbar-brand" href="#"><b>零秒购</b></a>
   <ul class="navbar-nav">
     <li class="nav-item">
-      <a class="nav-link" href="http://localhost:8080/bdqno/">首页</a>
+      <a class="nav-link" href="http://localhost:8080/bdqno/goods_index">首页</a>
     </li>
   </ul>
 </nav>
@@ -34,7 +34,7 @@
     <div class="col-12">
 <h1>出错了！</h1>
 <img src="img/error.png" width="400" height="400"><br>
-<a href="http://localhost:8080/bdqno/" class="btn btn-danger">返回主页</a>
+<a href="http://localhost:8080/bdqno/goods_index" class="btn btn-danger">返回主页</a>
 </div>
 </div>
 </div>

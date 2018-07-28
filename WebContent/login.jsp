@@ -24,7 +24,7 @@
 <a class="navbar-brand" href="#"><b>零秒购</b></a>
   <ul class="navbar-nav">
     <li class="nav-item">
-      <a class="nav-link" href="http://localhost:8080/bdqno/">首页</a>
+      <a class="nav-link" href="http://localhost:8080/bdqno/goods_index">首页</a>
     </li>
     <li class="nav-item active">
       <a class="nav-link" href="login.jsp">登录</a>

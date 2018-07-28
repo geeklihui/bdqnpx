@@ -10,13 +10,23 @@ public class UserAction {// 一个action中包含多个业务处理逻辑方法�
 	// 用户登录
 	public String login() {
 		UserDao dao = new UserDaoImpl();
-		if (dao.findByAccAndPwd(user) == null) {
+		User u=dao.findByAccAndPwd(user);
+		if (u == null) {
 			return "fail";
 		} else {
+			user.setUserName(u.getUserName());
+			user.setPassWord(u.getPassWord());
+			user.setAddress(u.getAddress());
+			user.setEmail(u.getEmail());
+			user.setId(u.getId());
+			user.setPhone(u.getPhone());
+			user.setRealName(u.getRealName());
+			
 			System.out.println(dao.findByAccAndPwd(user));
+			GoodsAction g=new GoodsAction();
+			g.index();
 			return "login";
-		}
-	}
+		}	}
 
 	// 注册
 	public String register(){
