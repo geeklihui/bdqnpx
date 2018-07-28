@@ -4,25 +4,28 @@
 	"http://struts.apache.org/dtds/struts-2.3.dtd">
 
 <struts>
-    <constant name="struts.enable.DynamicMethodInvocation" value="false" />
+	<constant name="struts.enable.DynamicMethodInvocation"
+		value="true" />
 
-    <package name="default" namespace="/" extends="struts-default">
-    
-        <action name="login" class="com.bdqno.web.action.LoginAction">
-            <result name="ok">/index.jsp</result>
-            <result name="fail">/login.jsp</result>
-        </action>
-        <action name="register" class="com.bdqno.web.action.RegisterAction">
-            <result name="ok">/login.jsp</result>
-        </action>
-        <action name="findpwd" class="com.bdqno.web.action.LoginAction">
-            <result name="ok">/login.jsp</result>
-        </action>
-        <action name="shopcar" class="com.bdqno.web.action.LoginAction">
-            <result name="ok">/pay.jsp</result>
-        </action>
-    </package>
+	<package name="default" namespace="/" extends="struts-default">
 
-    <!-- Add packages here -->
+		<action name="user_*" method="{1}"
+			class="com.bdqno.web.action.UserAction">
+			<result name="login">/index.jsp</result>
+			<result name="register">/login.jsp</result>
+			<result name="findpwd">/login.jsp</result>
+			<result name="fail">/error.jsp</result>
+		</action>
+
+		<action name="goods_*" method="{1}"
+			class="com.bdqno.web.action.GoodsAction">
+			<result name="all">/success.jsp</result>
+			<result name="ok">/detail.jsp</result>
+			<result name="fail">/fail.jsp</result>
+		</action>
+
+	</package>
+
+	<!-- Add packages here -->
 
 </struts>

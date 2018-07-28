@@ -41,7 +41,7 @@
 -->
  <div class="row">
     <div class="col-sm-12">
-<form action="register" method="post">
+<form action="user_register" method="post">
 
 <h4>账户信息</h4>
 <div class="input-group mb-3" style="padding: 0px 350px;">

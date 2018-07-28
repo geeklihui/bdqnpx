@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -20,6 +22,7 @@
 </head>
 <body>
 <center>
+
 <nav class="navbar navbar-expand-sm bg-danger navbar-dark fixed-top" style="text-color:white;">
 <a class="navbar-brand" href="#"><b>零秒购</b></a>
   <ul class="navbar-nav">
@@ -92,7 +95,7 @@
   
 </div>
 
-<div class="container" style="margin-top:100px">
+<div class="container" style="margin-top:100px;margin-bottom:50px;">
 
 <!-- 1.0版本头部信息
 <a href="index.jsp"><img alt="（网站logo）" src="img/logo1.jpg"></a>
@@ -100,7 +103,7 @@
 -->
 
 <div class="row">
-    <div class="col-sm-6">
+    <div class="col-sm-4">
 <img alt="（商品示例）" src="img/good1.jpg" ><br><br>
 <h3>卫生间专用白磨砂膜</h3>
 <s>原价：￥99.00</s> <br>
@@ -111,30 +114,39 @@
 </div>
 </div>
 
-<div class="col-sm-6">
+<div class="col-sm-8">
   <div class="card ">
     <div class="card-header bg-danger text-white"><b>商品详情</b></div>
     <div class="card-body bg-light text-dark">
-<h4 style="color:red;"><font size="3" color=black>抢购倒计时：</font><b>00:00:00</b></h4><br>
-<table class="table table-hover" style="width:450px">
+    <c:forEach var="goods" begin="0" end="0" items="${glist }">
+<h4 style="color:red;"><font size="3" color=black>抢购截止时间：</font><b>${goods.timeLimit}</b></h4><br>
+<table class="table table-hover" style="width:550px">
+
 <tr>
-	<td>商品名称：</td>
+	<td><b>商品名称：</b>${goods.name}</td>
 </tr>
 <tr>
-    <td>品牌：</td>
+    <td><b>商品编号：</b>${goods.goodsID}</td>
 </tr>
 <tr>
-	<td>折扣:</td>
+	<td><b>原价：</b>${goods.originalPrice}</td>
 </tr>
 <tr>
-	<td>数量：XX件，抢完即止</td>
+	<td><b>现价：</b>${goods.persentPrice}</td>
 </tr>
 <tr>
-	<td>发货地址:</td>
+	<td><b>折扣：</b>${goods.discount}</td>
 </tr>
 <tr>
-	<td>折扣时间:</td>
+	<td><b>库存：</b>${goods.number}件，抢完即止</td>
 </tr>
+<tr>
+	<td><b>卖家：</b>${goods.seller}</td>
+</tr>
+<tr>
+	<td><b>发货地址：</b>${goods.address}</td>
+</tr>
+</c:forEach>
 </table>
 </div> 
 </div>

@@ -36,13 +36,13 @@
 <div class="container" style="margin-bottom:50px;margin-top:100px;">
  <div class="row">
     <div class="col-sm-12">
-<form action="findpwd">
+<form action="user_findpwd" method="post">
 
 <div class="input-group mb-3" style="padding: 0px 350px;">
     <div class="input-group-prepend">
-        <span class="input-group-text">邮箱或手机</span>
+        <span class="input-group-text">邮箱</span>
     </div>
-      <input type="text" class="form-control" placeholder="用于找回密码" id="usr" name="username" autofocus>
+      <input type="email" class="form-control" placeholder="用于找回密码" id="ema" name="email" required="required" autofocus>
 </div>
 
 <div class="btn-group">

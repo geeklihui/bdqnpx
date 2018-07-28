@@ -32,7 +32,7 @@
 <div class="container" style="margin-top:100px">
   <div class="row">
     <div class="col-12">
-<h1>该商品暂未上架哦！</h1>
+<h1>出错了！</h1>
 <img src="img/error.png" width="400" height="400"><br>
 <a href="http://localhost:8080/bdqno/" class="btn btn-danger">返回主页</a>
 </div>

@@ -10,7 +10,7 @@ import com.bdqno.web.pojo.User;
 
 public class UserDaoImpl implements UserDao {
 
-	// 使用JDBC，分6个步骤完成
+	//注册
 	@Override
 	public int addUser(User user) {
 
@@ -18,7 +18,7 @@ public class UserDaoImpl implements UserDao {
 			// 1.加载驱动
 			Class.forName("com.mysql.jdbc.Driver");
 			// 2.获取数据库连接
-			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/ahstu", "root", "password");
+			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/ahstu?useSSL=false", "root", "password");
 			// 3.创建数据库操作对象
 			String sql = "insert into account(userName,passWord,email,phone,realName,address) values(?,?,?,?,?,?)";// 带参数的sql
 			PreparedStatement pst = con.prepareStatement(sql);
@@ -43,6 +43,7 @@ public class UserDaoImpl implements UserDao {
 		return 0;// 失败
 	}
 
+	//登录
 	@Override
 	public User findByAccAndPwd(User user) {
 		try {
@@ -69,6 +70,39 @@ public class UserDaoImpl implements UserDao {
 				u.setId(rst.getInt("id"));
 				u.setPhone(rst.getString("phone"));
 				u.setRealName(rst.getString("realName"));
+			}
+			// 6.关闭资源
+			rst.close();
+			pst.close();
+			con.close();
+			return u;
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+	
+	//找回密码
+	@Override
+	public User findpwd(User user) {
+		try {
+			// 1.加载驱动
+			Class.forName("com.mysql.jdbc.Driver");
+			// 2.获取数据库连接
+			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/ahstu?useSSL=false", "root",
+					"password");
+			// 3.创建数据库操作对象
+			String sql = "SELECT * FROM account WHERE email =?";// 带参数的sql
+			PreparedStatement pst = con.prepareStatement(sql);
+			pst.setString(1, user.getEmail());
+			// 4.执行sql语句获得结果
+			ResultSet rst = pst.executeQuery();// 获取查询结果集
+			// 5.处理结果
+			User u = null;
+			while (rst.next()) {// 若结果集有下一条数据，则取出数据，没有则结束循环
+				u = new User();
+				u.setEmail(rst.getString("email"));
 			}
 			// 6.关闭资源
 			rst.close();
