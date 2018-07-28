@@ -26,17 +26,17 @@
       <a class="nav-link" href="http://localhost:8080/bdqno/">首页</a>
     </li>
     <li class="nav-item active">
-      <a class="nav-link" href="Login">登录</a>
+      <a class="nav-link" href="login.jsp">登录</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="Register">注册</a>
+      <a class="nav-link" href="register.jsp">注册</a>
     </li>
   </ul>
 </nav>
 <div class="container" style="margin-bottom:50px;margin-top:100px;">
  <div class="row">
     <div class="col-sm-12">
-<form action="Findpwd" method="post">
+<form action="findpwd">
 
 <div class="input-group mb-3" style="padding: 0px 350px;">
     <div class="input-group-prepend">

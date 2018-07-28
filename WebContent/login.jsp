@@ -27,13 +27,10 @@
       <a class="nav-link" href="http://localhost:8080/bdqno/">首页</a>
     </li>
     <li class="nav-item active">
-      <a class="nav-link" href="Login">登录</a>
+      <a class="nav-link" href="login.jsp">登录</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="Register">注册</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link disabled" href="merchan.html">商家入口</a>
+      <a class="nav-link" href="register.jsp">注册</a>
     </li>
   </ul>
 </nav>
@@ -45,13 +42,13 @@
 -->
  <div class="row">
     <div class="col-sm-12">
-<form action="Login" method="post">
+<form action="login">
 
 <div class="input-group mb-3" style="padding: 0px 350px;">
     <div class="input-group-prepend">
         <span class="input-group-text">账户</span>
     </div>
-      <input type="text" class="form-control" placeholder="请输入账户" id="usr" name="username" autofocus>
+      <input type="text" class="form-control" placeholder="请输入账户" id="usr" name="account" autofocus>
 </div>
 <div class="input-group mb-3" style="padding: 0px 350px;">
     <div class="input-group-prepend">
@@ -65,7 +62,7 @@
 	<button type="reset" class="btn btn-dark">重置</button>
 </div>
 </form>
-	<a href="Findpwd" ><p style="margin-top:10px;color:black;">找回密码</p></a>
+	<a href="findpwd.jsp" ><p style="margin-top:10px;color:black;">找回密码</p></a>
 </div>
 </div>
 

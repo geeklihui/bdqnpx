@@ -27,7 +27,7 @@
       <a class="nav-link" href="http://localhost:8080/bdqno/">首页</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="Shopcar">购物车</a>
+      <a class="nav-link" href="shopcar.jsp">购物车</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="#" data-toggle="modal" data-target="#myModal">当前登录：${xxx}</a>
@@ -127,9 +127,6 @@
 </tr>
 <tr>
 	<td>数量：XX件，抢完即止</td>
-</tr>
-<tr>
-	<td>卖家:</td>
 </tr>
 <tr>
 	<td>发货地址:</td>

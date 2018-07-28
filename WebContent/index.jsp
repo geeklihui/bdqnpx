@@ -34,19 +34,16 @@
       <a class="nav-link" href="http://localhost:8080/bdqno">首页</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="Login">登录</a>
+      <a class="nav-link" href="login.jsp">登录</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="Register">注册</a>
+      <a class="nav-link" href="register.jsp">注册</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="Shopcar">购物车</a>
+      <a class="nav-link" href="shopcar.jsp">购物车</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link disabled" href="merchan.html">商家入口</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#" data-toggle="modal" data-target="#myModal">当前登录：${xxx}</a>
+      <a class="nav-link" href="#" data-toggle="modal" data-target="#myModal">当前登录：${account}</a>
     </li>
   </ul>
 </nav>
@@ -79,7 +76,7 @@
     <div class="card-body bg-light text-dark">
 	<table class="table table-hover" style="width:450px">
 <tr>
-	<td>用户名：</td>
+	<td>用户名：${account}</td>
 </tr>
 <tr>
     <td>数字ID：</td>
