@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>商品详情页</title>
+<title>茶品0.1折促销</title>
 <!-- 引入 Bootstrap -->
 <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -41,22 +41,20 @@
 <h2>商品详情页面</h2>
 -->
 <br>
-
-<div class="row">
-    <div class="col-sm-4">
-<img alt="（商品示例）" src="img/good1.jpg" width="300" height="300"><br><br>
-<h3>【包邮】卫生间专用白磨砂膜</h3>
+<img alt="（商品示例）" src="img/good1.jpg" width="300" height="300"><br>
+<h3>0.1折大促销</h3>
 限量份数：XX 剩余份数：XX<br>
-原价：99.00 抢购价：9.99<br>
-抢购时间：XXX<br><br>
+原价：XX 抢购价：XX<br>
+抢购时间：XXX<br>
 <div class="btn-group">
         <input type="submit" value="立即抢购" class="btn btn-danger">
 </div><br><br>
 
+<div class="container">
   <div class="card">
-    <div class="card-header bg-danger text-white">卖家信息</div>
-    <div class="card-body bg-light text-dark">
-<table class="table table-hover" style="width:200px">
+    <div class="card-header">卖家信息</div>
+    <div class="card-body">
+<table class="table table-hover" style="width:400px">
 <tr>
 	<td>店铺名称：零秒购自营</td>
 </tr>
@@ -74,10 +72,12 @@
 </div>
 </div>
 
-<div class="col-sm-8">
-  <div class="card ">
-    <div class="card-header bg-danger text-white">商品详情</div>
-    <div class="card-body bg-light text-dark">
+
+
+<div class="container">
+  <div class="card">
+    <div class="card-header">商品详情</div>
+    <div class="card-body">
 <p>商品介绍：
 <p>
 1、8月14日20点上线  8月15号-8月20号，不定时追加。<p>
@@ -97,7 +97,7 @@ http://help.zhonghuasuan.com/buyer/category/66/125/16<p>
 4、买家抢购资格后，必须从众划算活动提供的链接下单购买，所产生的淘宝客佣金由商家承担，如不通过此链接去下单而导致产生的淘宝客佣金由买家承担。众划算将扣除买家双倍淘宝客佣金的金额，扣除上限为应返还给买家的划算金总额。如核实为买家恶意赚取佣金，根据情节严重程度将按照二级或三级违规处理。
 <p>
 </div> 
-</div>
+
 </div>
 </div>
 </div>

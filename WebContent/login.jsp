@@ -6,18 +6,69 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>登录零秒购</title>
 <!-- 引入 Bootstrap -->
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" ></script>
 <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css">
 </head>
 <body>
-<a href="index.jsp"><img alt="（网站logo）" src="img/logo1.jpg"></a><h2>零秒购-用户登录页面</h2><br>
-账户<input placeholder="请输入账户"><br>
-密码<input placeholder="请输入密码"><br>
-<div class="btn-group">
-        <input type="submit" value="登录" class="btn btn-primary">
-        <input type="submit" value="注册" class="btn btn-info">
-        <input type="submit" value="找回密码" class="btn btn-danger">
-</div>
-<br>
+<center>
+<nav class="navbar navbar-expand-sm bg-danger navbar-dark fixed-top">
+<a class="navbar-brand" href="#"><b>零秒购</b></a>
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="http://localhost:8080/bdqno/">首页</a>
+    </li>
+    <li class="nav-item active">
+      <a class="nav-link" href="Login">登录</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="register.jsp">注册</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="shopcar.jsp">购物车</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="merchan.html">商家入口</a>
+    </li>
+  </ul>
+</nav>
 
+<div class="container" style="margin-top:100px">
+<!-- 1.0版本头部信息
+<a href="index.jsp"><img alt="（网站logo）" src="img/logo1.jpg"></a>
+<h2>零秒购-用户登录页面</h2>
+-->
+ <div class="row">
+    <div class="col-sm-12">
+<form action="Login" method="post">
+
+<div class="input-group mb-3" style="padding: 0px 350px;">
+    <div class="input-group-prepend">
+        <span class="input-group-text">账户</span>
+    </div>
+      <input type="text" class="form-control" placeholder="请输入账户" id="usr" name="username" autofocus>
+</div>
+<div class="input-group mb-3" style="padding: 0px 350px;">
+    <div class="input-group-prepend">
+        <span class="input-group-text">密码</span>
+	</div>
+      <input type="password" class="form-control" placeholder="请输入密码" id="pwd" name="password">
+</div>
+
+<div class="btn-group">
+	<button type="submit" class="btn btn-primary">登录</button>
+	<button type="reset" class="btn btn-danger">重置</button>
+	<button onclick="window.location.href='findpwd.jsp'" type="button" class="btn btn-dark">找回密码</button>
+</div>
+
+</form>
+</div>
+</div>
+
+【测试servlet】当前登录用户：${xxx}
+
+</div>
+</center>
 </body>
 </html>

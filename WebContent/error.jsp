@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>提交订单</title>
+<title>出错啦！</title>
 <!-- 引入 Bootstrap -->
 <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -19,7 +19,7 @@
     <li class="nav-item">
       <a class="nav-link" href="http://localhost:8080/bdqno/">首页</a>
     </li>
-    <li class="nav-item">
+    <li class="nav-item active">
       <a class="nav-link" href="Login">登录</a>
     </li>
     <li class="nav-item">
@@ -35,47 +35,13 @@
 </nav>
 
 <div class="container" style="margin-top:100px">
-
-<!-- 1.0版本头部信息
-<a href="index.jsp"><img alt="（网站logo）" src="img/logo1.jpg"></a>
-<h2>零秒购-提交订单</h2>
--->
-
-<h3>收货信息</h3>
-<table class="table" style="width:400px">
-<tr>
-    <td>收货人：XXX</td>
-</tr>
-<tr>
-	<td>电话：XXX</td>
-</tr>
-<tr>
-    <td>地址：XXX</td>
-</table>
-<h3>商品信息</h3>
-<table class="table" style="width:400px">
-<tr>
-    <td>商品名称：XXX</td>
-</tr>
-<tr>
-	<td>商品数量：XXX</td>
-</tr>
-<tr>
-    <td>商品价格：XXX</td>
-</tr>
-</table>
-<h3>支付方式</h3>
-<form>
-    <label class="radio-inline"><input type="radio" name="payment">支付宝</label>
-    <label class="radio-inline"><input type="radio" name="payment">微信</label>
-    <label class="radio-inline"><input type="radio" name="payment" disabled>账户余额</label>
-    <label class="radio-inline"><input type="radio" name="payment">货到付款</label>
-</form>
-<div class="btn-group">
-	<button type="submit" class="btn btn-primary">提交订单</button>
-	<button onclick="window.location.href='shopcar.jsp'" type="button" class="btn btn-dark">返回修改</button>
+  <div class="row">
+    <div class="col-12">
+<h1>该商品暂未上架哦！</h1>
+<img src="img/error.png" width="400" height="400"><br>
+<a href="http://localhost:8080/bdqno/" class="btn btn-danger">返回主页</a>
 </div>
-<br>
+</div>
 </div>
 </center>
 </body>
