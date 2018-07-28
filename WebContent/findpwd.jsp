@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>找回密码</title>
+<title>零秒购-找回密码</title>
 <!-- 引入 Bootstrap -->
 <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -33,8 +33,9 @@
     </li>
   </ul>
 </nav>
-<div style="margin-top:100px;">
-
+<div class="container" style="margin-bottom:50px;margin-top:100px;">
+ <div class="row">
+    <div class="col-sm-12">
 <form action="Findpwd" method="post">
 
 <div class="input-group mb-3" style="padding: 0px 350px;">
@@ -45,11 +46,13 @@
 </div>
 
 <div class="btn-group">
-	<button type="submit" class="btn btn-primary">提交</button>
-	<button type="reset" class="btn btn-danger">重置</button>
+	<button type="submit" class="btn btn-danger">提交</button>
+	<button type="reset" class="btn btn-dark">重置</button>
 </div>
 
 </form>
+</div>
+</div>
 </div>
 </center>
 </body>

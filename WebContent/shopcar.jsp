@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>购物车</title>
+<title>零秒购-购物车</title>
 <!-- 引入 Bootstrap -->
 <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -34,7 +34,9 @@
   </ul>
 </nav>
 
-<div class="container" style="margin-top:100px">
+<div class="container" style="margin-bottom:50px;margin-top:100px;">
+ <div class="row">
+    <div class="col-sm-12">
 
 <!-- 1.0版本头部信息
 <a href="index.jsp"><img alt="（网站logo）" src="img/logo1.jpg"></a>
@@ -61,10 +63,19 @@
     <td>数量：XXX</td>
     <td>删除</td>
 </tr>
+<tr>
+<td></td>
+<td></td>
+    <td><p style="margin-top:6px;"><b>总价：XXX</b></p></td>
+    <td>
+	<a href="pay.jsp">
+	<input type="submit" value="结算" class="btn btn-danger">
+	</a>
+	</td>
+</tr>
 </table>
-<div class="btn-group">
-<a href="pay.jsp"><input type="submit" value="结算" class="btn btn-primary">
-</a>
+
+</div>
 </div>
 </div>
 </center>

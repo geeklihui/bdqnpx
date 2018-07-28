@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>提交订单</title>
+<title>零秒购-提交订单</title>
 <!-- 引入 Bootstrap -->
 <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -34,13 +34,16 @@
   </ul>
 </nav>
 
-<div class="container" style="margin-top:100px">
+
 
 <!-- 1.0版本头部信息
 <a href="index.jsp"><img alt="（网站logo）" src="img/logo1.jpg"></a>
 <h2>零秒购-提交订单</h2>
 -->
 
+<div class="container" style="margin-bottom:50px;margin-top:100px;">
+ <div class="row">
+    <div class="col-sm-12">
 <h3>收货信息</h3>
 <table class="table" style="width:400px">
 <tr>
@@ -64,18 +67,35 @@
     <td>商品价格：XXX</td>
 </tr>
 </table>
+<h3>价目信息</h3>
+<table class="table" style="width:400px">
+<tr>
+    <td>商品总价：XXX</td>
+</tr>
+<tr>
+	<td>优惠折扣：XXX</td>
+</tr>
+<tr>
+    <td>运费：XXX</td>
+</tr>
+<tr>
+    <td>订单总价：XXX</td>
+</tr>
+</table>
 <h3>支付方式</h3>
 <form>
     <label class="radio-inline"><input type="radio" name="payment">支付宝</label>
     <label class="radio-inline"><input type="radio" name="payment">微信</label>
-    <label class="radio-inline"><input type="radio" name="payment" disabled>账户余额</label>
+    <label class="radio-inline"><input type="radio" name="payment">账户余额</label>
     <label class="radio-inline"><input type="radio" name="payment">货到付款</label>
 </form>
+<br>
 <div class="btn-group">
-	<button type="submit" class="btn btn-primary">提交订单</button>
+	<button type="submit" class="btn btn-danger">提交订单</button>
 	<button onclick="window.location.href='shopcar.jsp'" type="button" class="btn btn-dark">返回修改</button>
 </div>
-<br>
+</div>
+</div>
 </div>
 </center>
 </body>

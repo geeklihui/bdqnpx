@@ -100,116 +100,116 @@
 
 <br><br>
 
-<h2 style="color:FireBrick ;"><b>· 大家都在买 ·</b></h2><br>
+<h2 style="color:FireBrick;"><b>· 大家都在买 ·</b></h2><br>
 
 <div class="container" style="margin-bottom:50px;">
  <div class="row">
     <div class="col-sm-4">
   
-  <div class="card col-12" style="width:300px">
+  <div class="card col-sm-12" style="width:330px">
     <a target="_blank" href="detail.jsp">
     <img class="card-img-top" src="img/good1.jpg" alt="（商品示例）" width="300" height="300">
     </a>
     <div class="card-body">
-      <h4 class="card-title"style="color:red";><font size="3" color=black><s>原价：￥99.00 </s><br>限时折扣价：</font>￥9.99</h4>
+      <h4 class="card-title"style="color:red;"><font size="3" color=black><s>原价：￥99.00 </s><br>限时折扣价：</font>￥9.99</h4>
       <p class="card-text"><b>【包邮】卫生间专用白磨砂膜 请拍第一排50cm宽/米 </b></p>
-      <a target="_blank" href="detail.jsp" class="btn btn-danger">立即购买</a>
+      <a target="_blank" href="detail.jsp" class="btn btn-danger">立即抢购</a>
     </div>
   </div>
 
     <br><br>
 
-  <div class="card col-12" style="width:300px">
+  <div class="card col-12" style="width:330px">
     <a target="_blank" href="error.jsp">
     <img class="card-img-top" src="img/good2.jpg" alt="（商品示例）" width="300" height="300">
     </a>
     <div class="card-body">
-      <h4 class="card-title"style="color:red";><font size="3" color=black><s>原价：￥1280.00 </s><br>限时折扣价：</font>￥499.99</h4>
+      <h4 class="card-title"style="color:red;"><font size="3" color=black><s>原价：￥1280.00 </s><br>限时折扣价：</font>￥499.99</h4>
       <p class="card-text"><b>【包邮】七宝甩脂机 减肥神器 年中大促 数量有限 </b></p>
-      <a target="_blank" href="detail.jsp" class="btn btn-danger">立即购买</a>
+      <a target="_blank" href="error.jsp" class="btn btn-danger">立即抢购</a>
     </div>
   </div>
 
       <br><br>
-  <div class="card col-12" style="width:300px">
+  <div class="card col-12" style="width:330px">
     <a target="_blank" href="error.jsp">
     <img class="card-img-top" src="img/good3.jpg" alt="（商品示例）" width="300" height="300">
     </a>
     <div class="card-body">
-      <h4 class="card-title"style="color:red";><font size="3" color=black><s>原价：￥19.00 </s><br>限时折扣价：</font>￥3.99</h4>
+      <h4 class="card-title"style="color:red;"><font size="3" color=black><s>原价：￥19.00 </s><br>限时折扣价：</font>￥3.99</h4>
       <p class="card-text"><b>【包邮】移动下单 雪中送毯37x69大脚丫浴室防滑垫 </b></p>
-      <a target="_blank" href="detail.jsp" class="btn btn-danger">立即购买</a>
+      <a target="_blank" href="error.jsp" class="btn btn-danger">立即抢购</a>
     </div>
   </div>
     </div>
     <hr class="d-sm-none">
     <div class="col-sm-4">
-  <div class="card col-12" style="width:300px">
+  <div class="card col-12" style="width:330px">
     <a target="_blank" href="error.jsp">
     <img class="card-img-top" src="img/good4.jpg" alt="（商品示例）" width="300" height="300">
     </a>
     <div class="card-body">
-      <h4 class="card-title"style="color:red";><font size="3" color=black><s>原价：￥9.00 </s><br>限时折扣价：</font>￥2.99</h4>
+      <h4 class="card-title"style="color:red;"><font size="3" color=black><s>原价：￥9.00 </s><br>限时折扣价：</font>￥2.99</h4>
       <p class="card-text"><b>【包邮】现代客厅装饰画 田园油画发财树 幸福树 装饰画卧室 </b></p>
-      <a target="_blank" href="detail.jsp" class="btn btn-danger">立即购买</a>
+      <a target="_blank" href="error.jsp" class="btn btn-danger">立即抢购</a>
     </div>
   </div>
       <br><br>
-  <div class="card col-12" style="width:300px">
+  <div class="card col-12" style="width:330px">
     <a target="_blank" href="error.jsp">
     <img class="card-img-top" src="img/good5.jpg" alt="（商品示例）" width="300" height="300">
     </a>
     <div class="card-body">
-      <h4 class="card-title"style="color:red";><font size="3" color=black><s>原价：￥19.00 </s><br>限时折扣价：</font>￥4.99</h4>
-      <p class="card-text"><b>【包邮】家用衣柜塑料挂衣架 5个装 </b></p>
-      <a target="_blank" href="detail.jsp" class="btn btn-danger">立即购买</a>
+      <h4 class="card-title"style="color:red;"><font size="3" color=black><s>原价：￥19.00 </s><br>限时折扣价：</font>￥4.99</h4>
+      <p class="card-text"><b>【包邮】家用衣柜塑料挂衣架 防潮防锈5个装 </b></p>
+      <a target="_blank" href="error.jsp" class="btn btn-danger">立即抢购</a>
     </div>
   </div>
       <br><br>
-  <div class="card col-12" style="width:300px">
+  <div class="card col-12" style="width:330px">
     <a target="_blank" href="error.jsp">
     <img class="card-img-top" src="img/good6.jpg" alt="（商品示例）" width="300" height="300">
     </a>
     <div class="card-body">
-      <h4 class="card-title"style="color:red";><font size="3" color=black><s>原价：￥49.00 </s><br>限时折扣价：</font>￥4.99</h4>
+      <h4 class="card-title"style="color:red;"><font size="3" color=black><s>原价：￥49.00 </s><br>限时折扣价：</font>￥4.99</h4>
       <p class="card-text"><b>【包邮】【拍48元款】天猫正品韩版时尚项链锁骨链 </b></p>
-      <a target="_blank" href="detail.jsp" class="btn btn-danger">立即购买</a>
+      <a target="_blank" href="error.jsp" class="btn btn-danger">立即抢购</a>
     </div>
   </div>
       </div>
       
         <hr class="d-sm-none">
       <div class="col-sm-4">
-  <div class="card col-12" style="width:300px">
+  <div class="card col-12" style="width:330px">
     <a target="_blank" href="error.jsp">
     <img class="card-img-top" src="img/good7.jpg" alt="（商品示例）" width="300" height="300">
     </a>
     <div class="card-body">
-      <h4 class="card-title"style="color:red";><font size="3" color=black><s>原价：￥99.00 </s><br>限时折扣价：</font>￥19.99</h4>
+      <h4 class="card-title"style="color:red;"><font size="3" color=black><s>原价：￥99.00 </s><br>限时折扣价：</font>￥19.99</h4>
       <p class="card-text"><b>【包邮】专柜正品男士高档纯棉短袖t恤</b></p>
-      <a target="_blank" href="detail.jsp" class="btn btn-danger">立即购买</a>
+      <a target="_blank" href="error.jsp" class="btn btn-danger">立即抢购</a>
     </div>
   </div>
   <br><br>
-  <div class="card col-12" style="width:300px">
+  <div class="card col-12" style="width:330px">
     <a target="_blank" href="error.jsp">
     <img class="card-img-top" src="img/good8.jpg" alt="（商品示例）" width="300" height="300">
     </a>
     <div class="card-body">
-      <h4 class="card-title"style="color:red";><font size="3" color=black><s>原价：￥19.00 </s><br>限时折扣价：</font>￥1.99</h4>
+      <h4 class="card-title"style="color:red;"><font size="3" color=black><s>原价：￥19.00 </s><br>限时折扣价：</font>￥1.99</h4>
       <p class="card-text"><b>【包邮】小米4钢化玻璃膜 小米4防爆膜保护膜 </b></p>
-      <a target="_blank" href="detail.jsp" class="btn btn-danger">立即购买</a>
+      <a target="_blank" href="error.jsp" class="btn btn-danger">立即抢购</a>
     </div>
   </div>
   <br><br>
-  <div class="card col-12" style="width:300px">
+  <div class="card col-12" style="width:330px">
     <a target="_blank" href="error.jsp">
     <img class="card-img-top" src="img/good9.jpg" alt="（商品示例）" width="300" height="300">
     </a>
     <div class="card-body">
-      <h4 class="card-title"style="color:red";><font size="3" color=black><s>原价：￥5.90 </s><br>限时折扣价：</font>￥0.99</h4>
+      <h4 class="card-title"style="color:red;"><font size="3" color=black><s>原价：￥5.90 </s><br>限时折扣价：</font>￥0.99</h4>
       <p class="card-text"><b>【包邮】请拍1贴默认发3贴 送父母 送自己居家必备 膏药贴 </b></p>
-      <a target="_blank" href="detail.jsp" class="btn btn-danger">立即购买</a>
+      <a target="_blank" href="error.jsp" class="btn btn-danger">立即抢购</a>
     </div>
   </div>
       </div>

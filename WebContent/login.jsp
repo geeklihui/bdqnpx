@@ -57,14 +57,14 @@
 </div>
 
 <div class="btn-group">
-	<button type="submit" class="btn btn-primary">登录</button>
-	<button type="reset" class="btn btn-danger">重置</button>
-	<button onclick="window.location.href='findpwd.jsp'" type="button" class="btn btn-dark">找回密码</button>
+	<button type="submit" class="btn btn-danger">登录</button>
+	<button type="reset" class="btn btn-dark">重置</button>
+</div>
+</form>
+	<a href="findpwd.jsp" ><p style="margin-top:10px;color:black;">找回密码</p></a>
+</div>
 </div>
 
-</form>
-</div>
-</div>
 
 【测试servlet】当前登录用户：${xxx}
 
